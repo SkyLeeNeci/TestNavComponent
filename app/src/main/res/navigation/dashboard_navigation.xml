@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="karpenko.diploma.testnavcomponent.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_dashboardDetailFragment"
+            app:destination="@id/dashboardDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardDetailFragment"
+        android:name="karpenko.diploma.testnavcomponent.ui.dashboard.DashboardDetailFragment"
+        android:label="Dashboard Detail"
+        tools:layout="@layout/fragment_dashboard_detail" />
+</navigation>
